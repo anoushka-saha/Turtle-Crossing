@@ -28,3 +28,12 @@ class CarManager:
 
     def level_up(self):
         self.car_speed += 10
+
+    def finish(self):
+       if self.ycor() > 280:
+           return True
+       else:
+           return False
+    
+    def go_to_start(self):
+        self.goto(0,-280)
